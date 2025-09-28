@@ -5,7 +5,7 @@ This template implements a typst version of the [TUD math thesis](https://tu-dre
 - show rule for only numbering Equation with label
 
 # Remark: Fonts
-You need additional fonts for the template to function and look properly. The original LaTeX template uses Latin-Modern font family. You could download the oft-files from [here](https://www.1001fonts.com/latin-modern-roman-font.html).
+You need additional fonts for the template to function and look properly. The original LaTeX template uses Latin-Modern font family. You could download the otf-files from [here](https://www.1001fonts.com/latin-modern-roman-font.html).
 
 If you use this template locally you have to install this font on your system.
 If you use this template on the webapp you have to create a font-folder and put the otf-files in there.
