@@ -6,6 +6,7 @@
   identifier: "mathblocks",
   inherited_levels: 1,
 )
+
 // numbered theorem environments
 #let definition = mathblock(
   blocktitle: "Definition",
@@ -27,11 +28,13 @@
   blocktitle: "Beispiel",
   counter: mathcounter,
 )
+
 // Proof Environment
 #let beweis = proofblock(
   blocktitle: "Beweis",
   prefix: [_Beweis._#h(4pt)],
 )
+
 // unnumbered theorem Environments
 #let _definition = mathblock(
   blocktitle: "Definition",
@@ -78,6 +81,5 @@
       it
     }
   }
-
   document
 }

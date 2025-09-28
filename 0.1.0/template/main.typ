@@ -6,11 +6,14 @@
   vorname: [Ihr Vorname],
   gebdatum: [Ihr Geburtsdatum],
   ort: [Ihr Geburtsort],
-  betreuer: [Titel Vorname Familienname Ihres Betreuers],
+  betreuer: [Vollständiger akad. Titel (z.B. Prof. Dr. rer. nat. habil.) Vorname Familienname Ihres Betreuers / Ihrer Betreuerin],
+  betreuer-kurz: [Kurzer akad. Titel (z.B. Prof. Dr.) Vorname Familienname Ihres Betreuers / Ihrer Betreuerin],
   institut: [Institut ihres Betreuers],
   thema: [Titel ihrer Arbeit],
   datum: [tt. mm. jjjj],
   abschluss: "bsc",
+  studiengang: [Mathematik oder Technomathematik oder Wirtschaftsmathematik],
+  use_default_math_env: true,
 )
 
 
