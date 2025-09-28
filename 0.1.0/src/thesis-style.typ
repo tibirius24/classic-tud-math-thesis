@@ -1,4 +1,4 @@
-#import "math-utils.typ": *
+#import "@preview/hydra:0.6.0": hydra
 
 
 #let titlepage(
@@ -112,6 +112,9 @@
     size: 12pt,
     lang: "de",
   )
+  // Links
+  show link: set text(fill: rgb(0, 0, 238))
+  // Überschriften
   set heading(numbering: "1.1.1")
   show heading.where(level: 1): it => {
     pagebreak(weak: true)
@@ -135,9 +138,22 @@
       [*#it*]
     }
   }
+  // Variablen
+  let header = context {
+    if query(heading.where(level: 1)).find(h => h.location().page() == here().page()) != none {} else {
+      rect(
+        stroke: (bottom: 1pt + black),
+        width: 100%,
+      )[
+        #upper()[#hydra(1)]
+      ]
+    }
+  }
 
-  import "@preview/great-theorems:0.1.2": great-theorems-init
-  show: if (use_default_math_env) { great-theorems-init }
+  show: if (use_default_math_env) {
+    import "@preview/great-theorems:0.1.2": great-theorems-init
+    great-theorems-init
+  }
 
   titlepage(
     name: name,
@@ -151,8 +167,15 @@
     studiengang: studiengang,
     thesis: abschluss,
   )
+  set page(
+    header: header,
+    numbering: "- 1 -",
+  )
   outline()
   body
+  set page(
+    numbering: none,
+  )
   selbständigkeit(
     betreuer: betreuer-kurz,
     thema: thema,

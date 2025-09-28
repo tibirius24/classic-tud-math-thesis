@@ -12,6 +12,10 @@
   blocktitle: "Definition",
   counter: mathcounter,
 )
+#let satz = mathblock(
+  blocktitle: "Satz",
+  counter: mathcounter,
+)
 #let theorem = mathblock(
   blocktitle: "Theorem",
   counter: mathcounter,
@@ -38,6 +42,10 @@
 // unnumbered theorem Environments
 #let _definition = mathblock(
   blocktitle: "Definition",
+  counter: none,
+)
+#let _satz = mathblock(
+  blocktitle: "Satz",
   counter: none,
 )
 #let _theorem = mathblock(

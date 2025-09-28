@@ -1,6 +1,6 @@
-#import "../src/thesis-style.typ": *
+#import "../src/classic-tud-math-thesis.typ": *
 
-
+#show: document => conf-equations(document)
 #show: classic-tud-math-thesis.with(
   name: [Ihr Familienname],
   vorname: [Ihr Vorname],
@@ -17,49 +17,56 @@
 )
 
 
+
 #heading(numbering: none)[Einleitung]
-
-#lorem(140)
-
-= Erster Abschnitt
-
-#lorem(25)
-#_beispiel[Test beispiel]
-
-== ein unterabschnitt
-
-#lorem(40)
-
-#definition(title: [Euler])[#lorem(30)]<Euler> // das <Euler> ist ein Label
-
-Nach dieser tollen @Euler es nun weitergehen. // hier wurde das Label referenziert
-Natürlich kann man auch andere Quellen wie @knuth:1984 referenzieren
-
-#theorem[#lorem(20)]
-
-#lorem(40)
-#definition[#lorem(20)]
-
-#lemma[#lorem(20)]
-#beweis[
-  #lorem(30)
-]
-
-== ein zweiter unterabschnitt
 
 #lorem(200)
 
-#definition[#lorem(20)]
+= Wie verwende ich Mathematik
+== rechtwinklige Dreiecke und Theoreme
 
-#lorem(50)
+Wir reden zunächst über rechtwinklige Dreiecke. Dafür müssen wir erstmal ein paar Begriffe klären. Wie heißen beispielsweise die einzelnen Seiten? Was kann man damit tun?
 
-#korollar[#lorem(20)]
+#definition(title: [Katheten])[
+  In einem rechtwinkligen Dreieck heißen die an den rechten Winkel anliegenden Seiten _Katheten_.
+]
 
-#korollar[#lorem(20)]
+#definition[In einem rechtwinkligen Dreieck heißt die dem rechten Winkel gegenüberliegende Seite _Hypotenuse_.]
 
-= Abschnitt zwei
+Wir können dem einzelnen Umgebungen einen Titel geben, welcher dann in Klammern erscheint. Nach diesen Definitionen können wir nun folgenden Satz formulieren.
 
-#definition[#lorem(20)]
+#satz(title: [Pytagoras])[
+  Es seien $a$, $b$ und $c$ die Seitenlängen eines rechtwinkligen Dreiecks, wobei die $a$ und $b$ die Längen der Katheten sind und $c$ die Länge der Hypotenuse, dann gilt $ a^2 +b^2 = c^2 $<pythagoras:eq>
+]<pythagoras>
+
+Zu dem @pythagoras befinden sich in @Pythagoras:365Beweise 365 verschiedene Beweise. Die @pythagoras:eq wird an vielen stellen der Mathematik verwendet.
+
+== Gleichungssysteme
+
+In der Mathematik kann man auch Gleichungssysteme formulieren.
+$
+  a + b - c = 1 \
+  a - b + c = 1
+$<system:1>
+
+== Fill-Conent
+#lorem(300)
+= Typst-Tipps
+
+== Dokumentation
+Die #link("https://typst.app/docs/")[Typst-Dokumentation]#footnote[Hier ist das Wort mit der Webseite verlinkt] ist hervoragend.
+
+== Wie schreibt man dieses Symbol?
+Du kennst ein mathematisches Symbol nicht? Mit #link("https://detypify.quarticcat.com/")[detypify]#footnote[Das Wort ist mit der Webseite verlinkt] kannst du das Symbol einfach zeichnen und der entsprechende Typst-Befehl wird dir angezeigt.
+
+= Drittes Kapitel mit Inhalt
+
+#lorem(40)
+== ein Unterkapitel
+#lorem(150)
+
+== ein zweites Unterkapitel
+#lorem(250)
 
 = Zusammenfassung und Fazit
 #lorem(300)
