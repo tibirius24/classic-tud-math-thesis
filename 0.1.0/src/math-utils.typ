@@ -6,13 +6,13 @@
   identifier: "mathblocks",
   inherited_levels: 1,
 )
-// Define theorem environments
+// numbered theorem environments
 #let definition = mathblock(
   blocktitle: "Definition",
   counter: mathcounter,
 )
 #let theorem = mathblock(
-  blocktitle: "Definition",
+  blocktitle: "Theorem",
   counter: mathcounter,
 )
 #let lemma = mathblock(
@@ -27,9 +27,31 @@
   blocktitle: "Beispiel",
   counter: mathcounter,
 )
+// Proof Environment
 #let beweis = proofblock(
   blocktitle: "Beweis",
   prefix: [_Beweis._#h(4pt)],
+)
+// unnumbered theorem Environments
+#let _definition = mathblock(
+  blocktitle: "Definition",
+  counter: none,
+)
+#let _theorem = mathblock(
+  blocktitle: "Theorem",
+  counter: none,
+)
+#let _lemma = mathblock(
+  blocktitle: "Lemma",
+  counter: none,
+)
+#let _korollar = mathblock(
+  blocktitle: "Korollar",
+  counter: none,
+)
+#let _beispiel = mathblock(
+  blocktitle: "Beispiel",
+  counter: none,
 )
 
 // Only number Equations with a label
