@@ -28,6 +28,10 @@
   blocktitle: "Korollar",
   counter: mathcounter,
 )
+#let bemerkung = mathblock(
+  blocktitle: "Bemerkung",
+  counter: mathcounter,
+)
 #let beispiel = mathblock(
   blocktitle: "Beispiel",
   counter: mathcounter,
@@ -58,6 +62,10 @@
 )
 #let _korollar = mathblock(
   blocktitle: "Korollar",
+  counter: none,
+)
+#let bemerkung = mathblock(
+  blocktitle: "Bemerkung",
   counter: none,
 )
 #let _beispiel = mathblock(
