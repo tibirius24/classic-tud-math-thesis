@@ -22,7 +22,7 @@
 
 #lorem(200)
 
-= Wie verwende ich Mathematik
+= Mathematik und so
 == rechtwinklige Dreiecke und Theoreme
 
 Wir reden zunächst über rechtwinklige Dreiecke. Dafür müssen wir erstmal ein paar Begriffe klären. Wie heißen beispielsweise die einzelnen Seiten? Was kann man damit tun?
@@ -51,6 +51,7 @@ $<system:1>
 
 == Fill-Conent
 #lorem(300)
+
 = Typst-Tipps
 
 == Dokumentation
@@ -60,14 +61,11 @@ Die #link("https://typst.app/docs/")[Typst-Dokumentation]#footnote[Hier ist das 
 Du kennst ein mathematisches Symbol nicht? Mit #link("https://detypify.quarticcat.com/")[detypify]#footnote[Das Wort ist mit der Webseite verlinkt] kannst du das Symbol einfach zeichnen und der entsprechende Typst-Befehl wird dir angezeigt.
 
 = Drittes Kapitel mit Inhalt
-
 #lorem(40)
 == ein Unterkapitel
 #lorem(150)
-
 == ein zweites Unterkapitel
 #lorem(250)
-
 = Zusammenfassung und Fazit
 #lorem(300)
 
