@@ -1,6 +1,7 @@
 #import "../src/classic-tud-math-thesis.typ": *
 
-#show: document => conf-equations(document)
+#show: setup-equate.with()
+
 #show: classic-tud-math-thesis.with(
   name: [Ihr Familienname],
   vorname: [Ihr Vorname],
@@ -15,8 +16,6 @@
   studiengang: [Mathematik oder Technomathematik oder Wirtschaftsmathematik],
   use_default_math_env: true,
 )
-
-
 
 #heading(numbering: none)[Einleitung]
 
@@ -45,10 +44,11 @@ Zu dem @pythagoras befinden sich in @Pythagoras:365Beweise 365 verschiedene Bewe
 
 In der Mathematik kann man auch Gleichungssysteme formulieren.
 $
-  a + b - c = 1 \
-  a - b + c = 1
-$<system:1>
+  a + b - c = 1 #<sys:eq1>\
+  a - b + c = 1 #<sys:eq2>
+$<sys:label>
 
+Wenn dieses @sys:label mit Labels versehen ist, kann auch die einzelnen Gleichungen @sys:eq1 und @sys:eq2 refferenzieren.
 == Fill-Conent
 #lorem(300)
 

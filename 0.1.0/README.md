@@ -70,6 +70,9 @@ We also provide an unnumbered version with
 ## proof environment
 - `#beweis[body]`
 
-# Some other usefull utils
-## Equation numbering
-With the `#show: document => conf-equations(document)` show-rule only equations with a label will be numbered.
+# Numbering of equations
+We use for the behaviour and the numbering of the equations the [equate 0.3.2](https://typst.app/universe/package/equate/0.3.2/) package. If you want to use equate with our presets, then write this command in the beginning of your document:
+```typ
+#show: setup-equate.with()
+```
+If you want to change the behaviour of equate, then you could pass them threw `setup-equate.with()`directly to equate. For more information look directly in the [equate](https://typst.app/universe/package/equate/0.3.2/) package.

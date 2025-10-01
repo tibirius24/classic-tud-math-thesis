@@ -112,8 +112,9 @@
     size: 12pt,
     lang: "de",
   )
+  set math.equation(numbering: "(1a)")
   // Links
-  show link: set text(fill: rgb(0, 0, 238))
+  // show link: set text(fill: rgb(0, 0, 238))
   // Überschriften
   set heading(numbering: "1.1.1")
   show heading.where(level: 1): it => {
