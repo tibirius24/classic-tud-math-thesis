@@ -1,4 +1,4 @@
-#import "@preview/hydra:0.6.0": hydra
+#import "@preview/hydra:0.6.2": hydra
 
 
 #let titlepage(
@@ -153,7 +153,6 @@
 
   show: if (use-default-math-env) {
     import "@preview/great-theorems:0.1.2": great-theorems-init
-    great-theorems-init
   }
 
   titlepage(
